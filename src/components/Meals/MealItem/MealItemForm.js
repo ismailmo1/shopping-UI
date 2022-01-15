@@ -6,7 +6,6 @@ const MealItemForm = (props) => {
   const [amountIsValid, setAmountIsValid] = useState(true);
   const submitHandler = (event) => {
     event.preventDefault();
-    console.log("submitting");
     const enteredAmount = +amountInputRef.current.value;
     if (enteredAmount < 1 || enteredAmount > 5) {
       setAmountIsValid(false);
